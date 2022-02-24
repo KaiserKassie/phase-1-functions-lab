@@ -4,8 +4,7 @@ const distanceFromHqInBlocks = function (distance) {
 }
 
 function distanceFromHqInFeet(distance) {
-    let blockDistance = distanceFromHqInBlocks(distance);
-    return blockDistance * 264
+    return 264 * distanceFromHqInBlocks(distance);
 }
 
 const distanceTravelledInFeet = function (start, destination) {
